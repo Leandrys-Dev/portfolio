@@ -12,4 +12,4 @@ The main goal of this repository is to achieve a whole and well structured web p
 
 ## Assets info
 
-I will use some external assets, like fonts and icons from [Google Fonts](https://fonts.google.com/) and maybe some other pictures. If i use any asset created by me, feel free to use it, but at least mention me!. **Be cautious with the use of these external assets due to licenses updates**.
+I will use some external assets, like fonts and icons from [Google Fonts](https://fonts.google.com/) and [8icons](https://8icons.com). If i use any asset created by me, feel free to use it, but at least mention me!. **Be cautious with the use of these external assets due to licenses updates**.
