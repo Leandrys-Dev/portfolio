@@ -15,7 +15,7 @@
 
 /* force narrow screen on non-mobile devices */
 @media (width > 800px) {
-    body {
+    .body {
         max-width: 70%;
         margin: auto;
     }
