@@ -1,0 +1,5 @@
+/* Add Inter fonts to the document, stored locally */
+@font-face {
+    font-family: "Inter";
+    src: "../fonts/Inter/Inter-VariableFont_slnt,wght.ttf";
+}
