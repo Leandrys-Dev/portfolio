@@ -4,23 +4,29 @@
     src: "../fonts/Inter/Inter-VariableFont_slnt,wght.ttf";
 }
 
+.body {
+    font-family: Inter;
+}
+
+.nav-bar {
+    top: 0;
+    position: sticky;
+    /* apply blur effect */
+    backdrop-filter: blur(3px);
+}
+
 .nav-bar-link-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    gap: 1rem;
-    padding: 0 1rem;
+    padding: 1rem;
 }
 
 /* force narrow screen on non-mobile devices */
 @media (width > 800px) {
     .body {
         max-width: 70%;
-        margin: auto;
-    }
-
-    .nav-link {
-        flex: auto;
+        margin: 0 auto;
     }
 }
