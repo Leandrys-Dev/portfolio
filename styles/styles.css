@@ -4,15 +4,13 @@
     src: "../fonts/Inter/Inter-VariableFont_slnt,wght.ttf";
 }
 
-.body {
-    font-family: Inter;
-}
-
+/* ********************************* nav bar ********************* */
 .nav-bar {
     top: 0;
     position: sticky;
     /* apply blur effect */
     backdrop-filter: blur(3px);
+    z-index: 1;
 }
 
 .nav-bar-link-container {
@@ -21,6 +19,56 @@
     align-items: center;
     list-style-type: none;
     padding: 1rem;
+}
+
+/*************************** intro card view *********************/
+.presentation {
+    display: flex;
+    flex-direction: column;
+    font-family: Inter;
+}
+
+.card-view {
+    border-radius: 3px;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 3px 3px 10px rgb(136, 135, 135);
+    text-wrap: pretty;
+}
+
+.intro {
+    /* inherit display flex and center de img and titles */
+    display: inherit;
+    align-items: center;
+}
+
+.intro-card-avatar {
+    float: left;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgb(40, 191, 199);
+    border-radius: 100%;
+}
+
+.intro-card-info {
+    /* permit to use padding and margin with no problem near from floated objects */
+    display: flow-root;
+    padding-left: 1rem;
+}
+
+.intro-card-info-name {
+    font-weight: bold;
+    font-size: 1.3rem;
+    display: block;
+}
+
+.intro-card-info-title {
+    font-size: small;
+    color: rgb(70, 70, 70);
+}
+
+/***************************** body *******************************/
+.body {
+    font-family: Inter;
 }
 
 /* force narrow screen on non-mobile devices */
