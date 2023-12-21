@@ -17,8 +17,13 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    list-style-type: none;
     padding: 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: bolder;
+    text-shadow: 1px 1px 5px rgb(150, 150, 150);
 }
 
 /*************************** intro card view *********************/
