@@ -71,6 +71,36 @@
     color: rgb(70, 70, 70);
 }
 
+/***************************** Main-Skills *************************/
+.main-skills__main-header {
+    text-align: center;
+}
+
+.front-skills__container {
+    margin-left: 1rem;
+}
+
+.main-skills__list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-skills__list-item {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: left;
+    padding-left: 1.5rem;
+    margin: 0.5rem;
+}
+
+.list-item__html {
+    background-image: url(../imgs/logos/icons8-html.svg);
+}
+
+.list-item__css {
+    background-image: url(../imgs/logos/icons8-css.svg);
+}
+
 /***************************** body *******************************/
 .body {
     font-family: Inter;
