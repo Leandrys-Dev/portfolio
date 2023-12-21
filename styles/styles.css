@@ -76,6 +76,12 @@
     font-family: Inter;
 }
 
+.main-article {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 /* force narrow screen on non-mobile devices */
 @media (width > 800px) {
     .body {
