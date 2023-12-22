@@ -5,26 +5,17 @@
 @import url(./sections/soft-skills.css);
 @import url(./sections/contacts.css);
 @import url(./sections/footer.css);
+@import url(./fonts.css);
 
 /* wider screen as desktop and tablets*/
 @import url(./layouts/wider-devices.css);
 
-/* Add Inter fonts to the document, stored locally */
-@font-face {
-    font-family: "Inter";
-    src: local("Inter"), url("../fonts/Inter/Inter-VariableFont_slnt,wght.ttf");
-}
-
 /* Cards used in the layout */
 .card-view {
+    font-family: "Lato-Regular";
     border-radius: 3px;
     padding: 1rem;
     margin: 1rem;
     box-shadow: 3px 3px 10px var(--lightgray);
     text-wrap: pretty;
-}
-
-/***************************** body *******************************/
-.body {
-    font-family: Inter;
 }
