@@ -42,6 +42,15 @@
     text-shadow: 1px 1px 2px var(--lightgray);
 }
 
+.nav-bar__link-button:hover,
+.nav-bar__link-button:focus {
+    color: var(--black);
+}
+
+.nav-bar__link-button:active {
+    color: var(--red);
+}
+
 /*************************** intro card view *********************/
 .presentation {
     display: flex;
