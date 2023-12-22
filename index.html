@@ -10,7 +10,7 @@
     <title>Leandrys Dev</title>
 </head>
 
-<body class="body">
+<body class="body" id="init">
     <header class="nav-bar">
         <nav class=" nav-bar__link-container">
             <a class="nav-bar__link-button" href="#main-skills">Tecnologías</a>
@@ -45,9 +45,17 @@
                 <h1 class="main-skills__main-header" id="main-skills">Tecnologías aprendidas</h1>
                 <div class="front-skills__container">
                     <h3>Lado del cliente (front-end)</h3>
-                    <ul class="main-skills__list">
-                        <li class="main-skills__list-item list-item__html">HTML</li>
-                        <li class="main-skills__list-item list-item__css">CSS</li>
+                    <ul class="skills__list">
+                        <li class="skills__list-item list-item__html">HTML</li>
+                        <li class="skills__list-item list-item__css">CSS</li>
+                    </ul>
+                </div>
+                <div class="complementary-skills__container">
+                    <h3>Tecnologías complementarias</h3>
+                    <ul class="skills__list">
+                        <li class="main-skills__list-item">Markdown</li>
+                        <li class="main-skills__list-item">Git</li>
+                        <li class="main-skills__list-item">Github</li>
                     </ul>
                 </div>
             </section>
@@ -139,13 +147,13 @@
                         <img class="contact__section_button-logo" src="./imgs/logos/icons8-gmail.svg"
                             alt="logotipo de Gmail">
                     </a>
-                    <a class="contact__section_button" href="https://www.linkedin.com/in/leandrys-osorio" target="_blank"
-                        no-referrer noopener>
+                    <a class="contact__section_button" href="https://www.linkedin.com/in/leandrys-osorio"
+                        target="_blank" no-referrer noopener>
                         <img class="contact__section_button-logo" src="./imgs/logos/icons8-linkedin-logo.svg"
                             alt="logotipo de LinkedIn">
                     </a>
-                    <a class="contact__section_button" href="https://github.com/Leandrys-Dev" target="_blank" no-referrer
-                        noopener>
+                    <a class="contact__section_button" href="https://github.com/Leandrys-Dev" target="_blank"
+                        no-referrer noopener>
                         <img class="contact__section_button-logo" src="./imgs/logos/icons8-github.svg"
                             alt="logotipo de Github">
                     </a>
@@ -155,10 +163,15 @@
         </article>
     </main>
     <footer class="footer">
-        <p>Todo el código usado está sujeto a la <a class="footer__external-link" href="https://opensource.org/license/mit" no-referrer noopener
+        <p>Todo el código usado está sujeto a la <a class="footer__external-link"
+                href="https://opensource.org/license/mit" no-referrer noopener
                 title="Página de la Open source foundation">licencia MIT</a>, <strong>los gráficos están sujetos a su
-                propia <a class="footer__external-link" href="https://github.com/Leandrys-Dev/portfolio/blob/main/readme.md" target="_blank"
-                    no-referrer noopener title="Archivo readme de la página">licencia</a></strong>.</p>
+                propia <a class="footer__external-link"
+                    href="https://github.com/Leandrys-Dev/portfolio/blob/main/readme.md" target="_blank" no-referrer
+                    noopener title="Archivo readme de la página">licencia</a></strong>.</p>
+
+        <!-- This button is added to goto the init of the page -->
+        <a class="footer__backtop-button" href="#init">⮝</a>
     </footer>
 </body>
 
