@@ -144,6 +144,12 @@
     font-weight: bold;
 }
 
+.soft-skills-accordion__title:hover,
+.soft-skills-accordion__title:focus,
+.soft-skills-accordion__title:active {
+    color: var(--purple);
+}
+
 /* It is used to add the Symbol */
 .soft-skills-accordion__title::before {
     content: "↕";
