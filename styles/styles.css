@@ -88,6 +88,12 @@
 }
 
 /***************************** Main-Skills *************************/
+.main-skills__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
 .main-skills__main-header {
     text-align: center;
     font-size: var(--main-header);
@@ -228,10 +234,15 @@
     gap: 0.5rem;
 }
 
-/* force narrow screen on non-mobile devices */
-@media (width > 800px) {
+@media (width >= 685px) {
+    /* force narrow screen on non-mobile devices */
     .body {
         max-width: 70%;
         margin: 0 auto;
+    }
+
+    /* separate the main skills list */
+    .main-skills__container {
+        justify-content: space-around;
     }
 }
