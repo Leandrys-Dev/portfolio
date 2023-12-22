@@ -1,0 +1,33 @@
+@import url(../vars.css);
+
+.contact__section_header {
+    text-align: center;
+    font-size: var(--main-header);
+}
+
+.contact-buttons__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contact__section_button {
+    display: inline-block;
+    height: 3.125rem;
+    width: 3.125rem;
+    transition-duration: 0.2s;
+}
+
+.contact__section_button:focus {
+    scale: 1.5;
+}
+
+.contact__section_button:hover {
+    scale: 1.5;
+}
+
+.contact__section_button-logo {
+    width: 100%;
+    height: 100%;
+}

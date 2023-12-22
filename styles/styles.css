@@ -3,6 +3,7 @@
 @import url(./sections/intro.css);
 @import url(./sections/main-skills.css);
 @import url(./sections/soft-skills.css);
+@import url(./sections/contacts.css);
 
 /* Add Inter fonts to the document, stored locally */
 @font-face {
