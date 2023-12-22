@@ -6,6 +6,9 @@
 @import url(./sections/contacts.css);
 @import url(./sections/footer.css);
 
+/* wider screen as desktop and tablets*/
+@import url(./layouts/wider-devices.css);
+
 /* Add Inter fonts to the document, stored locally */
 @font-face {
     font-family: "Inter";
@@ -24,23 +27,4 @@
 /***************************** body *******************************/
 .body {
     font-family: Inter;
-}
-
-.main-article {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-@media (width >= 685px) {
-    /* force narrow screen on non-mobile devices */
-    .body {
-        max-width: 70%;
-        margin: 0 auto;
-    }
-
-    /* separate the main skills list */
-    .main-skills__container {
-        justify-content: space-around;
-    }
 }

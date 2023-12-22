@@ -1,0 +1,19 @@
+.main-article {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+@media (width >= 685px) {
+    /* force narrow screen on non-mobile devices */
+    .body {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    /* separate the main skills list */
+    .main-skills__container {
+        justify-content: space-around;
+    }
+}
+
