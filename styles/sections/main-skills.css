@@ -1,0 +1,46 @@
+@import url(../vars.css);
+
+.main-skills__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.main-skills__main-header {
+    text-align: center;
+    font-size: var(--main-header);
+}
+
+.skills__list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills__list-item {
+    font-weight: 500;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: left;
+    padding-left: 1.5rem;
+    margin: 0.5rem;
+}
+
+.list-item__html {
+    background-image: url(../../imgs/logos/icons8-html.svg);
+}
+
+.list-item__css {
+    background-image: url(../../imgs/logos/icons8-css.svg);
+}
+
+.list-item__git {
+    background-image: url(../../imgs/logos/icons8-git.svg);
+}
+
+.list-item__github {
+    background-image: url(../../imgs/logos/icons8-github.svg);
+}
+
+.list-item__markdown {
+    background-image: url(../../imgs/logos/markdown.svg);
+}
