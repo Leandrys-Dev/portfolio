@@ -6,8 +6,8 @@
 
 /* variables */
 :root {
+    --purple: rgb(105, 66, 210);
     --black: rgb(10, 10, 10);
-    --lightblue: rgb(40, 191, 199);
     --darkgray: rgb(70, 70, 70);
     --lightgray: rgb(150, 150, 150);
 }
@@ -30,7 +30,7 @@
 }
 
 .nav-bar__link-button {
-    color: var(--black);
+    color: var(--purple);
     text-decoration: none;
     font-weight: bolder;
     text-shadow: 1px 1px 2px var(--lightgray);
@@ -60,7 +60,7 @@
 .intro__card-avatar {
     float: left;
     object-fit: cover;
-    box-shadow: 0 0 10px var(--lightblue);
+    box-shadow: 0 0 10px var(--purple);
     border-radius: 100%;
 }
 
@@ -124,7 +124,7 @@
 /* It is used to add the Symbol */
 .soft-skills-accordion__title::before {
     content: "↕";
-    color: var(--lightblue);
+    color: var(--purple);
     margin: 0.3125rem;
 }
 

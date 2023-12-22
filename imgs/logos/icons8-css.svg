@@ -27,7 +27,7 @@
      inkscape:deskcolor="#505050"
      inkscape:zoom="8.24"
      inkscape:cx="22.936893"
-     inkscape:cy="23.240291"
+     inkscape:cy="23.118932"
      inkscape:window-width="1366"
      inkscape:window-height="699"
      inkscape:window-x="0"
@@ -48,16 +48,18 @@
      font-weight="none"
      font-size="none"
      text-anchor="none"
-     style="mix-blend-mode:normal"
+     style="mix-blend-mode:normal;fill:#6942d2;fill-opacity:1"
      id="g2"
-     transform="matrix(1.2320553,0,0,1.1834159,-29.703078,-23.477235)">
+     transform="matrix(1.3179533,0,0,1.3157895,-40.698023,-40.421052)">
     <g
        transform="scale(5.12)"
-       id="g1">
+       id="g1"
+       style="fill:#6942d2;fill-opacity:1">
       <path
          d="M 42,6 38.830045,39.900918 25,44 11.478442,39.947085 8,6 Z M 16.80078,28 h 4 L 20.89844,30.5 25,31.89844 29.10156,30.5 29.39844,26 h -8.79687 l -0.20312,-4 h 9.20313 l 0.29688,-4 H 16.10159 l -0.30078,-4 h 18.30078 l -0.5,8 -0.70312,11.5 -7.89844,2.60156 L 17.10159,33.5 Z"
          id="path1"
-         sodipodi:nodetypes="cccccccccccccccccccccccc" />
+         sodipodi:nodetypes="cccccccccccccccccccccccc"
+         style="fill:#6942d2;fill-opacity:1" />
     </g>
   </g>
 </svg>
