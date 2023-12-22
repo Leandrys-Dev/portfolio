@@ -1,4 +1,5 @@
 @import url(./vars.css);
+@import url(./sections/header.css);
 
 /* Add Inter fonts to the document, stored locally */
 @font-face {
@@ -7,37 +8,6 @@
 }
 
 /* ********************************* nav bar ********************* */
-.nav-bar {
-    top: 0;
-    position: sticky;
-    /* apply blur effect */
-    backdrop-filter: blur(3px);
-    z-index: 1;
-}
-
-.nav-bar__link-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
-    gap: 0.3rem; /* prevent to collapse to much in devices like z-fold (android) */
-}
-
-.nav-bar__link-button {
-    color: var(--purple);
-    text-decoration: none;
-    font-weight: bolder;
-    text-shadow: 1px 1px 2px var(--lightgray);
-}
-
-.nav-bar__link-button:hover,
-.nav-bar__link-button:focus {
-    color: var(--black);
-}
-
-.nav-bar__link-button:active {
-    color: var(--red);
-}
 
 /*************************** intro card view *********************/
 .presentation {
