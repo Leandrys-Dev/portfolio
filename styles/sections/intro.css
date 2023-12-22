@@ -1,0 +1,38 @@
+@import url(../vars.css);
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    font-family: Inter;
+}
+
+
+.intro {
+    /* inherit display flex and center de img and titles */
+    display: inherit;
+    align-items: center;
+}
+
+.intro__card-avatar {
+    float: left;
+    object-fit: cover;
+    box-shadow: 0 0 10px var(--purple);
+    border-radius: 100%;
+}
+
+.intro__card-info {
+    /* permit to use padding and margin with no problem near from floated objects */
+    display: flow-root;
+    padding-left: 1rem;
+}
+
+.intro__card-info_name {
+    font-weight: bold;
+    font-size: 1.3rem;
+    display: block;
+}
+
+.intro__card-info_title {
+    font-size: small;
+    color: var(--darkgray);
+}

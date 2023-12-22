@@ -1,63 +1,21 @@
+@import url(./vars.css);
+@import url(./sections/header.css);
+@import url(./sections/intro.css);
+@import url(./sections/main-skills.css);
+@import url(./sections/soft-skills.css);
+@import url(./sections/contacts.css);
+@import url(./sections/footer.css);
+
+/* wider screen as desktop and tablets*/
+@import url(./layouts/wider-devices.css);
+
 /* Add Inter fonts to the document, stored locally */
 @font-face {
     font-family: "Inter";
     src: local("Inter"), url("../fonts/Inter/Inter-VariableFont_slnt,wght.ttf");
 }
 
-/* variables */
-:root {
-    /* colors */
-    --purple: rgb(105, 66, 210);
-    --red: rgb(190, 71, 71);
-    --blue: rgb(0, 153, 255);
-    --black: rgb(10, 10, 10);
-    --darkgray: rgb(70, 70, 70);
-    --lightgray: rgb(150, 150, 150);
-
-    /* headers-size */
-    --main-header: 2rem;
-}
-
-/* ********************************* nav bar ********************* */
-.nav-bar {
-    top: 0;
-    position: sticky;
-    /* apply blur effect */
-    backdrop-filter: blur(3px);
-    z-index: 1;
-}
-
-.nav-bar__link-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
-    gap: 0.3rem; /* prevent to collapse to much in devices like z-fold (android) */
-}
-
-.nav-bar__link-button {
-    color: var(--purple);
-    text-decoration: none;
-    font-weight: bolder;
-    text-shadow: 1px 1px 2px var(--lightgray);
-}
-
-.nav-bar__link-button:hover,
-.nav-bar__link-button:focus {
-    color: var(--black);
-}
-
-.nav-bar__link-button:active {
-    color: var(--red);
-}
-
-/*************************** intro card view *********************/
-.presentation {
-    display: flex;
-    flex-direction: column;
-    font-family: Inter;
-}
-
+/* Cards used in the layout */
 .card-view {
     border-radius: 3px;
     padding: 1rem;
@@ -66,216 +24,7 @@
     text-wrap: pretty;
 }
 
-.intro {
-    /* inherit display flex and center de img and titles */
-    display: inherit;
-    align-items: center;
-}
-
-.intro__card-avatar {
-    float: left;
-    object-fit: cover;
-    box-shadow: 0 0 10px var(--purple);
-    border-radius: 100%;
-}
-
-.intro__card-info {
-    /* permit to use padding and margin with no problem near from floated objects */
-    display: flow-root;
-    padding-left: 1rem;
-}
-
-.intro__card-info_name {
-    font-weight: bold;
-    font-size: 1.3rem;
-    display: block;
-}
-
-.intro__card-info_title {
-    font-size: small;
-    color: var(--darkgray);
-}
-
-/***************************** Main-Skills *************************/
-.main-skills__container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-
-.main-skills__main-header {
-    text-align: center;
-    font-size: var(--main-header);
-}
-
-.skills__list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.skills__list-item {
-    font-weight: 500;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: left;
-    padding-left: 1.5rem;
-    margin: 0.5rem;
-}
-
-.list-item__html {
-    background-image: url(../imgs/logos/icons8-html.svg);
-}
-
-.list-item__css {
-    background-image: url(../imgs/logos/icons8-css.svg);
-}
-
-.list-item__git {
-    background-image: url(../imgs/logos/icons8-git.svg);
-}
-
-.list-item__github {
-    background-image: url(../imgs/logos/icons8-github.svg);
-}
-
-.list-item__markdown {
-    background-image: url(../imgs/logos/markdown.svg);
-}
-
-/***************************** Soft-skills *************************/
-.soft-skills__main-header {
-    text-align: center;
-    font-size: var(--main-header);
-}
-
-.soft-skills-accordion__title {
-    list-style-type: none;
-    line-height: 2;
-    font-weight: bold;
-}
-
-.soft-skills-accordion__title:hover,
-.soft-skills-accordion__title:focus,
-.soft-skills-accordion__title:active {
-    color: var(--purple);
-}
-
-/* It is used to add the Symbol */
-.soft-skills-accordion__title::before {
-    content: "↕";
-    color: var(--purple);
-    margin: 0.3125rem;
-}
-
-.soft-skills-accordion__text {
-    line-height: 1.6;
-    text-wrap: pretty;
-}
-
-/***************************** Contact-section *********************/
-.contact__section_header {
-    text-align: center;
-    font-size: var(--main-header);
-}
-
-.contact-buttons__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.contact__section_button {
-    display: inline-block;
-    height: 3.125rem;
-    width: 3.125rem;
-    transition-duration: 0.2s;
-}
-
-.contact__section_button:focus {
-    scale: 1.5;
-}
-
-.contact__section_button:hover {
-    scale: 1.5;
-}
-
-.contact__section_button-logo {
-    width: 100%;
-    height: 100%;
-}
-
-/**************************** footer ******************************/
-.footer {
-    text-align: center;
-    padding: 1rem;
-    color: var(--darkgray);
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.footer__external-link {
-    color: var(--purple);
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/* add the arrow to the end */
-.footer__external-link::after {
-    content: "🡭";
-    margin-left: 0.3125rem;
-}
-
-/* change color to black when the link is targeted */
-.footer__external-link:hover,
-.footer__external-link:focus {
-    color: var(--black);
-}
-
-/* change color to red on click */
-.footer__external-link:active {
-    color: var(--red);
-}
-
-.footer__external-link:visited {
-    color: var(--blue);
-}
-
-.footer__backtop-button {
-    color: var(--purple);
-    font-size: 2rem;
-    text-decoration: none;
-    transition-duration: 0.2s;
-}
-
-/* The third selector is used to tactile devices */
-.footer__backtop-button:hover,
-.footer__backtop-button:focus,
-.footer__backtop-button:active {
-    scale: 1.5;
-}
-
 /***************************** body *******************************/
 .body {
     font-family: Inter;
-}
-
-.main-article {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-@media (width >= 685px) {
-    /* force narrow screen on non-mobile devices */
-    .body {
-        max-width: 70%;
-        margin: 0 auto;
-    }
-
-    /* separate the main skills list */
-    .main-skills__container {
-        justify-content: space-around;
-    }
 }
