@@ -1,0 +1,12 @@
+:root {
+    /* colors */
+    --purple: rgb(105, 66, 210);
+    --red: rgb(190, 71, 71);
+    --blue: rgb(0, 153, 255);
+    --black: rgb(10, 10, 10);
+    --darkgray: rgb(70, 70, 70);
+    --lightgray: rgb(150, 150, 150);
+
+    /* headers-size */
+    --main-header: 2rem;
+}
