@@ -2,6 +2,7 @@
 @import url(./sections/header.css);
 @import url(./sections/intro.css);
 @import url(./sections/main-skills.css);
+@import url(./sections/soft-skills.css);
 
 /* Add Inter fonts to the document, stored locally */
 @font-face {
@@ -15,36 +16,6 @@
     padding: 1rem;
     margin: 1rem;
     box-shadow: 3px 3px 10px var(--lightgray);
-    text-wrap: pretty;
-}
-
-/***************************** Soft-skills *************************/
-.soft-skills__main-header {
-    text-align: center;
-    font-size: var(--main-header);
-}
-
-.soft-skills-accordion__title {
-    list-style-type: none;
-    line-height: 2;
-    font-weight: bold;
-}
-
-.soft-skills-accordion__title:hover,
-.soft-skills-accordion__title:focus,
-.soft-skills-accordion__title:active {
-    color: var(--purple);
-}
-
-/* It is used to add the Symbol */
-.soft-skills-accordion__title::before {
-    content: "↕";
-    color: var(--purple);
-    margin: 0.3125rem;
-}
-
-.soft-skills-accordion__text {
-    line-height: 1.6;
     text-wrap: pretty;
 }
 
