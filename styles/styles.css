@@ -4,6 +4,10 @@
 @import url(./sections/main-skills.css);
 @import url(./sections/soft-skills.css);
 @import url(./sections/contacts.css);
+@import url(./sections/footer.css);
+
+/* wider screen as desktop and tablets*/
+@import url(./layouts/wider-devices.css);
 
 /* Add Inter fonts to the document, stored locally */
 @font-face {
@@ -21,6 +25,37 @@
 }
 
 /***************************** Contact-section *********************/
+.contact__section_header {
+    text-align: center;
+    font-size: var(--main-header);
+}
+
+.contact-buttons__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contact__section_button {
+    display: inline-block;
+    height: 3.125rem;
+    width: 3.125rem;
+    transition-duration: 0.2s;
+}
+
+.contact__section_button:focus {
+    scale: 1.5;
+}
+
+.contact__section_button:hover {
+    scale: 1.5;
+}
+
+.contact__section_button-logo {
+    width: 100%;
+    height: 100%;
+}
 
 /**************************** footer ******************************/
 .footer {
@@ -76,23 +111,4 @@
 /***************************** body *******************************/
 .body {
     font-family: Inter;
-}
-
-.main-article {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-@media (width >= 685px) {
-    /* force narrow screen on non-mobile devices */
-    .body {
-        max-width: 70%;
-        margin: 0 auto;
-    }
-
-    /* separate the main skills list */
-    .main-skills__container {
-        justify-content: space-around;
-    }
 }

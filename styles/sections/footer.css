@@ -1,0 +1,51 @@
+@import url(../vars.css);
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    color: var(--darkgray);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer__external-link {
+    color: var(--purple);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* add the arrow to the end */
+.footer__external-link::after {
+    content: "🡭";
+    margin-left: 0.3125rem;
+}
+
+/* change color to black when the link is targeted */
+.footer__external-link:hover,
+.footer__external-link:focus {
+    color: var(--black);
+}
+
+/* change color to red on click */
+.footer__external-link:active {
+    color: var(--red);
+}
+
+.footer__external-link:visited {
+    color: var(--blue);
+}
+
+.footer__backtop-button {
+    color: var(--purple);
+    font-size: 2rem;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+/* The third selector is used to tactile devices */
+.footer__backtop-button:hover,
+.footer__backtop-button:focus,
+.footer__backtop-button:active {
+    scale: 1.5;
+}
