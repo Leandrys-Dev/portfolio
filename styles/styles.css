@@ -105,6 +105,7 @@
 }
 
 .skills__list-item {
+    font-weight: 500;
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: left;
