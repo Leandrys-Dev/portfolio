@@ -93,12 +93,12 @@
     font-size: var(--main-header);
 }
 
-.main-skills__list {
+.skills__list {
     list-style-type: none;
     padding: 0;
 }
 
-.main-skills__list-item {
+.skills__list-item {
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: left;
@@ -112,6 +112,18 @@
 
 .list-item__css {
     background-image: url(../imgs/logos/icons8-css.svg);
+}
+
+.list-item__git {
+    background-image: url(../imgs/logos/icons8-git.svg);
+}
+
+.list-item__github {
+    background-image: url(../imgs/logos/icons8-github.svg);
+}
+
+.list-item__markdown {
+    background-image: url(../imgs/logos/markdown.svg);
 }
 
 /***************************** Soft-skills *************************/
@@ -191,7 +203,8 @@
 }
 
 /* change color to black when the link is targeted */
-.footer__external-link:hover, .footer__external-link:focus {
+.footer__external-link:hover,
+.footer__external-link:focus {
     color: var(--black);
 }
 
