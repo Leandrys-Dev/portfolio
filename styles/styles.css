@@ -42,6 +42,15 @@
     text-shadow: 1px 1px 2px var(--lightgray);
 }
 
+.nav-bar__link-button:hover,
+.nav-bar__link-button:focus {
+    color: var(--black);
+}
+
+.nav-bar__link-button:active {
+    color: var(--red);
+}
+
 /*************************** intro card view *********************/
 .presentation {
     display: flex;
@@ -88,17 +97,24 @@
 }
 
 /***************************** Main-Skills *************************/
+.main-skills__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
 .main-skills__main-header {
     text-align: center;
     font-size: var(--main-header);
 }
 
-.main-skills__list {
+.skills__list {
     list-style-type: none;
     padding: 0;
 }
 
-.main-skills__list-item {
+.skills__list-item {
+    font-weight: 500;
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: left;
@@ -114,6 +130,18 @@
     background-image: url(../imgs/logos/icons8-css.svg);
 }
 
+.list-item__git {
+    background-image: url(../imgs/logos/icons8-git.svg);
+}
+
+.list-item__github {
+    background-image: url(../imgs/logos/icons8-github.svg);
+}
+
+.list-item__markdown {
+    background-image: url(../imgs/logos/markdown.svg);
+}
+
 /***************************** Soft-skills *************************/
 .soft-skills__main-header {
     text-align: center;
@@ -124,6 +152,12 @@
     list-style-type: none;
     line-height: 2;
     font-weight: bold;
+}
+
+.soft-skills-accordion__title:hover,
+.soft-skills-accordion__title:focus,
+.soft-skills-accordion__title:active {
+    color: var(--purple);
 }
 
 /* It is used to add the Symbol */
@@ -176,6 +210,9 @@
     text-align: center;
     padding: 1rem;
     color: var(--darkgray);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .footer__external-link {
@@ -191,7 +228,8 @@
 }
 
 /* change color to black when the link is targeted */
-.footer__external-link:hover, .footer__external-link:focus {
+.footer__external-link:hover,
+.footer__external-link:focus {
     color: var(--black);
 }
 
@@ -202,6 +240,20 @@
 
 .footer__external-link:visited {
     color: var(--blue);
+}
+
+.footer__backtop-button {
+    color: var(--purple);
+    font-size: 2rem;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+/* The third selector is used to tactile devices */
+.footer__backtop-button:hover,
+.footer__backtop-button:focus,
+.footer__backtop-button:active {
+    scale: 1.5;
 }
 
 /***************************** body *******************************/
@@ -215,10 +267,15 @@
     gap: 0.5rem;
 }
 
-/* force narrow screen on non-mobile devices */
-@media (width > 800px) {
+@media (width >= 685px) {
+    /* force narrow screen on non-mobile devices */
     .body {
         max-width: 70%;
         margin: 0 auto;
+    }
+
+    /* separate the main skills list */
+    .main-skills__container {
+        justify-content: space-around;
     }
 }
