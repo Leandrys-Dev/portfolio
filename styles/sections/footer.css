@@ -39,10 +39,14 @@
 }
 
 .footer__backtop-button {
-    color: var(--purple);
-    font-size: 2rem;
-    text-decoration: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
     transition-duration: 0.2s;
+}
+
+.footer__arrow-to-start {
+    min-height: 100%;
 }
 
 /* The third selector is used to tactile devices */
