@@ -1,17 +1,19 @@
 @import url(../vars.css);
 
 .footer {
+    font-family: "Lato-Regular";
     text-align: center;
     padding: 1rem;
-    color: var(--darkgray);
+    color: var(--black);
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
 }
 
 .footer__external-link {
     color: var(--purple);
-    font-weight: bold;
+    font-family: "Lato-Bold";
     text-decoration: none;
 }
 

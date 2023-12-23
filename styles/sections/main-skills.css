@@ -7,6 +7,7 @@
 }
 
 .main-skills__main-header {
+    font-family: "Lato-Bold";
     text-align: center;
     font-size: var(--main-header);
 }
@@ -16,8 +17,12 @@
     padding: 0;
 }
 
+.stack-list__header {
+    font-family: "Lato-Bold";
+}
+
 .skills__list-item {
-    font-weight: 500;
+    font-family: "Lato-Bold";
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: left;

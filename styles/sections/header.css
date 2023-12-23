@@ -17,6 +17,7 @@
 }
 
 .nav-bar__link-button {
+    font-family: "Lato-Bold";
     color: var(--purple);
     text-decoration: none;
     font-weight: bolder;
