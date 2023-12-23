@@ -1,6 +1,7 @@
 @import url(../vars.css);
 
 .footer {
+    text-wrap: pretty;
     font-family: "Lato-Regular";
     text-align: center;
     padding: 1rem;
@@ -15,12 +16,11 @@
     color: var(--purple);
     font-family: "Lato-Bold";
     text-decoration: none;
-}
-
-/* add the arrow to the end */
-.footer__external-link::after {
-    content: "🡭";
-    margin-left: 0.3125rem;
+    /* add an arrow at the end to indicate that is an external link */
+    background-image: url(../../imgs/icons/external-link-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-right: 25px;
 }
 
 /* change color to black when the link is targeted */
@@ -39,10 +39,14 @@
 }
 
 .footer__backtop-button {
-    color: var(--purple);
-    font-size: 2rem;
-    text-decoration: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
     transition-duration: 0.2s;
+}
+
+.footer__arrow-to-start {
+    min-height: 100%;
 }
 
 /* The third selector is used to tactile devices */
