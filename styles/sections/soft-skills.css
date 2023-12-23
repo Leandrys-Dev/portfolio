@@ -11,19 +11,16 @@
     list-style-type: none;
     line-height: 2;
     font-weight: bold;
+    /* touch icon at the begin of the accordion title */
+    background: url(../../imgs/icons/touch.svg) no-repeat;
+    background-position: center left;
+    padding-left: 2rem;
 }
 
 .soft-skills-accordion__title:hover,
 .soft-skills-accordion__title:focus,
 .soft-skills-accordion__title:active {
     color: var(--purple);
-}
-
-/* It is used to add the Symbol */
-.soft-skills-accordion__title::before {
-    content: "↕";
-    color: var(--purple);
-    margin: 0.3125rem;
 }
 
 .soft-skills-accordion__text {
