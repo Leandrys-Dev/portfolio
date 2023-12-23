@@ -3,7 +3,6 @@
 .presentation {
     display: flex;
     flex-direction: column;
-    font-family: Inter;
 }
 
 
@@ -27,12 +26,18 @@
 }
 
 .intro__card-info_name {
-    font-weight: bold;
+    font-family: "Lato-Bold";
     font-size: 1.3rem;
     display: block;
 }
 
 .intro__card-info_title {
+    font-family: "Lato-Light";
+    font-weight: bold;
     font-size: small;
-    color: var(--darkgray);
+    color: var(--black);
+}
+
+.intro__text {
+    font-size: 1.2rem;
 }
