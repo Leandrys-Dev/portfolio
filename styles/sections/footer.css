@@ -19,8 +19,8 @@
     /* add an arrow at the end to indicate that is an external link */
     background-image: url(../../imgs/icons/external-link-arrow.svg);
     background-repeat: no-repeat;
-    background-position-x: 55px;
-    padding-right: 20px;
+    background-position: center right;
+    padding-right: 25px;
 }
 
 /* change color to black when the link is targeted */
