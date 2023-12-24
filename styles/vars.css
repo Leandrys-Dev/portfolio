@@ -9,10 +9,10 @@
     --dark-theme-background: rgb(33, 32, 43);
     --dark-theme-text: rgb(230, 230, 230);
 
-    /* default theme colors */
-    --default-theme-background: rgb(240, 240, 240);
-    --default-theme-text: rgb(10, 10, 10);
-    --default-theme-shadows: rgb(150, 150, 150);
+    /* light theme colors */
+    --light-theme-background: rgb(240, 240, 240);
+    --light-theme-text: rgb(10, 10, 10);
+    --light-theme-shadows: rgb(150, 150, 150);
 
     /* headers-size */
     --main-header: 2rem;

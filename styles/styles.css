@@ -10,7 +10,9 @@
 /* wider screen as desktop and tablets*/
 @import url(./layouts/wider-devices.css);
 
+/* themes selected automatically depending of device configuration  */
 @import url(../styles/themes/dark.css);
+@import url(../styles/themes/light.css);
 
 /* Cards used in the layout */
 .card-view {

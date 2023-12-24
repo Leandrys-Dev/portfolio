@@ -1,13 +1,13 @@
-@media(prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
 
-    @layer dark-theme {
+    @layer light {
         .body {
-            background-color: var(--dark-theme-background);
+            background-color: var(--light-theme-background);
         }
 
         .body,
         .nav-bar__link-button {
-            color: var(--dark-theme-text);
+            color: var(--light-theme-text);
         }
 
         .nav-bar__link-button:hover,
@@ -25,11 +25,11 @@
         }
 
         .card-view {
-            box-shadow: 3px 3px 10px var(--purple);
+            box-shadow: 3px 3px 10px var(--light-theme-shadows);
         }
 
         .footer__goto-top-button {
-            box-shadow: 0 0 10px var(--purple);
+            box-shadow: 0 0 10px var(--light-theme-shadows);
         }
     }
 }
