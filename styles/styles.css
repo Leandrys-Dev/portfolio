@@ -6,16 +6,11 @@
 @import url(./sections/contacts.css);
 @import url(./sections/footer.css);
 @import url(./fonts.css);
+@import url(./layouts/card-view.css);
 
 /* wider screen as desktop and tablets*/
 @import url(./layouts/wider-devices.css);
 
-/* Cards used in the layout */
-.card-view {
-    font-family: "Lato-Regular";
-    border-radius: 3px;
-    padding: 1rem;
-    margin: 1rem;
-    box-shadow: 3px 3px 10px var(--lightgray);
-    text-wrap: pretty;
-}
+/* themes selected automatically depending of device configuration  */
+@import url(../styles/themes/dark.css);
+@import url(../styles/themes/light.css);
