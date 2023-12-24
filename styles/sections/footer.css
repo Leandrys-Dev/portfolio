@@ -38,20 +38,20 @@
     color: var(--blue);
 }
 
-.footer__backtop-button {
+.footer__goto-top-button {
     display: inline-block;
     width: 32px;
     height: 32px;
     transition-duration: 0.2s;
 }
 
-.footer__arrow-to-start {
+.footer__arrow-goto-top {
     min-height: 100%;
 }
 
 /* The third selector is used to tactile devices */
-.footer__backtop-button:hover,
-.footer__backtop-button:focus,
-.footer__backtop-button:active {
+.footer__goto-top-button:hover,
+.footer__goto-top-button:focus,
+.footer__goto-top-button:active {
     scale: 1.5;
 }
