@@ -1,5 +1,11 @@
 @import url(../vars.css);
 
+.main-skills__main-header,
+.stack-list__header,
+.skills__list-item {
+    font-family: "Lato-Bold";
+}
+
 .main-skills__container {
     display: flex;
     flex-flow: row wrap;
@@ -7,7 +13,6 @@
 }
 
 .main-skills__main-header {
-    font-family: "Lato-Bold";
     text-align: center;
     font-size: var(--main-header);
 }
@@ -17,12 +22,7 @@
     padding: 0;
 }
 
-.stack-list__header {
-    font-family: "Lato-Bold";
-}
-
 .skills__list-item {
-    font-family: "Lato-Bold";
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: left;

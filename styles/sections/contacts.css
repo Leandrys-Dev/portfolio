@@ -1,5 +1,6 @@
 @import url(../vars.css);
 @import url(../fonts.css);
+
 .contact__section_header {
     text-align: center;
     font-family: "Lato-Bold";
@@ -20,10 +21,7 @@
     transition-duration: 0.2s;
 }
 
-.contact__section_button:focus {
-    scale: 1.5;
-}
-
+.contact__section_button:focus,
 .contact__section_button:hover {
     scale: 1.5;
 }

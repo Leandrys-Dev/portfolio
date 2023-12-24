@@ -1,13 +1,17 @@
 @import url(../vars.css);
 
+.soft-skills-accordion__title,
 .soft-skills__main-header {
     font-family: "Lato-Bold";
+}
+
+
+.soft-skills__main-header {
     text-align: center;
     font-size: var(--main-header);
 }
 
 .soft-skills-accordion__title {
-    font-family: "Lato-Bold";
     list-style-type: none;
     line-height: 2;
     font-weight: bold;
