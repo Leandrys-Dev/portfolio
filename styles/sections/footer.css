@@ -5,7 +5,6 @@
     font-family: "Lato-Regular";
     text-align: center;
     padding: 1rem;
-    color: var(--black);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,7 +12,6 @@
 }
 
 .footer__external-link {
-    color: var(--purple);
     font-family: "Lato-Bold";
     text-decoration: none;
     /* add an arrow at the end to indicate that is an external link */
@@ -23,22 +21,17 @@
     padding-right: 25px;
 }
 
-/* change color to black when the link is targeted */
-.footer__external-link:hover,
-.footer__external-link:focus {
-    color: var(--black);
-}
-
 /* change color to red on click */
 .footer__external-link:active {
     color: var(--red);
 }
 
 .footer__external-link:visited {
-    color: var(--blue);
+    color: var(--visited);
 }
 
 .footer__goto-top-button {
+    border-radius: 100%;
     display: inline-block;
     width: 32px;
     height: 32px;

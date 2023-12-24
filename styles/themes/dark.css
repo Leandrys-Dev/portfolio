@@ -1,0 +1,35 @@
+@media(prefers-color-scheme: dark) {
+
+    @layer dark-theme {
+        .body {
+            background-color: var(--dark-theme-background);
+        }
+
+        .body,
+        .nav-bar__link-button {
+            color: var(--dark-theme-text);
+        }
+
+        .nav-bar__link-button:hover,
+        .footer__external-link:hover,
+        .nav-bar__link-button:focus,
+        .footer__external-link:focus {
+            color: var(--purple);
+            text-shadow: 0px 0px 10px var(--purple);
+            transition-duration: 0.2s;
+        }
+
+        .footer__external-link {
+            color: var(--link);
+            font-size: 1.1rem;
+        }
+
+        .card-view {
+            box-shadow: 3px 3px 10px var(--purple);
+        }
+
+        .footer__goto-top-button {
+            box-shadow: 0 0 10px var(--purple);
+        }
+    }
+}

@@ -10,12 +10,13 @@
 /* wider screen as desktop and tablets*/
 @import url(./layouts/wider-devices.css);
 
+@import url(../styles/themes/dark.css);
+
 /* Cards used in the layout */
 .card-view {
     font-family: "Lato-Regular";
     border-radius: 3px;
     padding: 1rem;
     margin: 1rem;
-    box-shadow: 3px 3px 10px var(--lightgray);
     text-wrap: pretty;
 }
